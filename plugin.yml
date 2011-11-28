@@ -1,0 +1,7 @@
+name: BFPlugin
+version: 0.1
+main: me.duper51.BattlefieldPlugin.BFMain
+commands:
+  bf:
+    description: Shows a help message for the Battlefield Plugin.
+    usage: /bf
