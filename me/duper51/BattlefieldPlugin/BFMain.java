@@ -20,9 +20,8 @@ public class BFMain extends JavaPlugin {
 	public void onEnable() {
 		// TODO Auto-generated method stub
 		PluginManager pm = getServer().getPluginManager();
-		pm.registerEvent(Event.Type.PLAYER_LOGIN, plistener, null, Priority.Normal, this);
-		pm.registerEvent(Event.Type.PLAYER_QUIT, plistener, null, Priority.Normal, this);
-		log.info("[BFPlugin] Battlefield Plugin is enabled.");
+		pm.registerEvent(Event.Type.PLAYER_LOGIN, plistener, Priority.Normal, this);
+		pm.registerEvent(Event.Type.PLAYER_QUIT, plistener, Priority.Normal, this);
 		getCommand("bf").setExecutor(new BFCMDEXE());
 	}
 
